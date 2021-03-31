@@ -4,7 +4,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;
 }
-   img {
+img {
     position: relative;
 }   
 div {
@@ -15,14 +15,13 @@ p {
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
 } 
-
 #topnav {
-     background-color: #f8f9fa;
+    background-color: #f8f9fa;
     border: 1px solid #f8f9fa;
     position: fixed;
     top: 0;
     right: 0;
-    }
+}
 ul {
 list-style-type: none;    
 margin: 0;
@@ -46,8 +45,7 @@ li {
   font-size: 12px;
   color: #000;
 }
-a
- {
+a {
     background-color: #f8f9fa;
     border: 1px solid #f8f9fa;
     border-radius: 4px;
@@ -62,8 +60,8 @@ a
     text-align: center;
     cursor: pointer;
     user-select: none;
-  }
-.submit-button {
+}
+button {
     background-color: #f8f9fa;
     border: 1px solid #f8f9fa;
     border-radius: 4px;
@@ -78,37 +76,47 @@ a
     text-align: center;
     cursor: pointer;
     user-select: none;
-  }
-
-#search {
-    height: 2.5em;
-    border-width: 1px;
-    border-color: #e6e6e6;
-    border-style: solid;
-    border-radius: 25px;
-    padding: 20px;
-    width: 80%;
 }
-    </style>
-
+button:hover {
+    box-shadow:  0px  0px  5px  2px   #e6e6e6;
+}
+input {
+   height: 2.5em;
+   border: 1px solid #e6e6e6;
+   border-radius: 25px;
+   padding: 20px;
+   width: 80%;
+   background: #FFF url(/images/input-text-9.png) no-repeat 4px 4px; 
+   outline:0; 
+   height:25px; 
+    } 
+input:focus,   
+input:active {
+    height: 2.5em;
+    border: 1px solid #e6e6e6;
+    border-radius: 25px;
+    width: 80%;
+    background: #FFF url(/images/input-text-9.png) no-repeat 4px 4px; 
+    outline:0; 
+    box-shadow:  0px  0px  5px  2px   #e6e6e6;
+}
+</style>
 <body>
 <ul id="topnav">
     <li><a href="mail.google.com">Gmail</a></li>
     <li><a href="www.google.nl/imghp">Afbeeldingen</a></li>
 </ul>
     <div>
-<center>
     <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="googlelogo">
     <form>
         <input type="text" placeholder="" id="search">
     </form>
-       
+<p>       
     <button type="submit" class="submit-button">Google Search</button>
     <button type="submit" class="submit-button">I'm Feeling Lucky</button>
-
-    <p>Google aangeboden in: Frysk</p>
+</p>    
+<p>Google aangeboden in: Frysk</p>
     </div>
-</center>
 <ul id="bottomnav-left">
     <li><a href="#">About</a></li>
     <li><a href="#">Advertising</a></li>
